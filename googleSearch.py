@@ -14,10 +14,10 @@ driver = webdriver.Chrome(options=options)
 def googleSearch():
     driver.maximize_window()
     driver.get("http://www.google.com")
-
+    
     # Find the html element
     element = driver.find_element(by=By.CLASS_NAME, value='gLFyf')
     # Input the string and press enter 
-    element.send_keys('Selenium Python', Keys.RETURN)
+    element.send_keys('12345', Keys.RETURN)
     
 googleSearch()
